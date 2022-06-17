@@ -3,14 +3,16 @@ import { Visibility, VisibilityOff, AccountCircle, } from "@mui/icons-material";
 import { TabTitle } from '../../Components/Common/CommonFun';
 import React, { useEffect, useState, useRef } from 'react';
 import Popup from '../../Components/AlertPopup/Popup';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import "./auth.css";
 
 const Signup = ({ URL }) => {
 
-    const [loading, setLoading] = useState(false);
-    const [Worning, setWorning] = useState('');
     const [showPassword, setShowPassword] = useState('');
+    const [loading, setLoading] = useState(false);const localToken = localStorage.getItem('token');
+    const decodedToken = jwt.decode(localToken);
+    const [Worning, setWorning] = useState('');
     const authForm = useRef();
 
 
@@ -31,9 +33,11 @@ const Signup = ({ URL }) => {
 
 
     //~-------------------------------* TITLE *-------------------------------~// 
+    
     TabTitle(`Company Search | Signup`)
 
     //&-------------------------------* PASSWORD VISIBILITY FUNCTIONS *-------------------------------&//
+    
     const handleClickShowPassword = (e) => {
         setShowPassword(e.currentTarget);
     };
@@ -46,6 +50,7 @@ const Signup = ({ URL }) => {
     useEffect(() => { setTimeout(() => { setWorning('') }, 3000) }, [])
 
     //*-------------------------------* CREATE ACCOUNT FUNCTION *-------------------------------*//
+    
     const handleSubmit = async (e) => {
 
         e.preventDefault();

@@ -10,6 +10,7 @@ import './navbar.css';
 function Navbar({ page, search, CompanyDetails, URL }) {
 
     //*-------------------------------* STATE VALUSE *-------------------------------*//
+    
     const localToken = localStorage.getItem('token');
     const decodedToken = jwt.decode(localToken);
     const [Worning, setWorning] = useState('');
@@ -30,6 +31,7 @@ function Navbar({ page, search, CompanyDetails, URL }) {
     }, [])
 
     //!-------------------------------* DELETE FUNCTION *-------------------------------!//
+    
     const DeleteCompany = (async (Id) => {
 
         if (window.confirm('Are you sure to delete this contact?')) {
