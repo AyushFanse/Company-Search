@@ -4,6 +4,7 @@ import { TabTitle } from '../../Components/Common/CommonFun';
 import React, { useEffect, useState, useRef } from 'react';
 import Popup from '../../Components/AlertPopup/Popup';
 import { useHistory } from 'react-router-dom';
+import jwt from 'jsonwebtoken';
 import axios from 'axios';
 import "./auth.css";
 
@@ -13,6 +14,7 @@ const Signup = ({ URL }) => {
     const [loading, setLoading] = useState(false);const localToken = localStorage.getItem('token');
     const decodedToken = jwt.decode(localToken);
     const [Worning, setWorning] = useState('');
+    const history = useHistory();
     const authForm = useRef();
 
 
