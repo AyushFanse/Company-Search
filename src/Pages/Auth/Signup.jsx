@@ -13,7 +13,7 @@ const Signup = ({ URL }) => {
     const [showPassword, setShowPassword] = useState('');
     const authForm = useRef();
 
-    
+
     //*-------------------------------* USE-EFFECT FUNCTION *-------------------------------*//
 
     useEffect(() => {
