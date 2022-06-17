@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+#appbar {
+    position: fixed;
+    background: var(--cl);
+    cursor: default;
+    text-transform: uppercase;
+    box-shadow: 4px 0px 10px var(--clo);
+    width: 100%;
+}
+
+.searchIcon {
+    color: white;
+}
+
+.navbarNavigatorTitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e2caa;
+}
+
+/**-----------------------* Desktop *-----------------------**/
+
+@media (min-width: 768px) {
+    #searchIconBar {
+        display: flex;
+        justify-content: flex-start;
+        width: 25%;
+        background-color: rgba(128, 128, 128, 0.13);
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    #searchIconOut {
+        position: relative;
+        margin-right: 2px;
+    }
+
+    #searchField {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        left: 0;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    #SearchBarForMd {
+        width: 100%;
+        display: none;
+    }
+
+    #NavbarHeading {
+        text-align: center;
+    }
+}
+
+/**-----------------------* Desktop *-----------------------**/
+
+@media (max-width: 768px) {
+
+    #searchIconBar {
+        display: none;
+    }
+
+    #searchIconOut {
+        display: none;
+    }
+
+    #searchField {
+        display: none;
+    }
+
+    #searchIconBarForMd {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.13);
+        padding: 5px 10px;
+    }
+
+    #searchIconOutForMd {
+        position: relative;
+        margin-right: 2px;
+    }
+
+    #searchFieldForMd {
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        padding-left: 10px;
+        left: 0;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .navbarNavigatorTitle {
+        display: none;
+    }
+
+    #NavbarHeading {
+        text-align: start;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+    }
+}

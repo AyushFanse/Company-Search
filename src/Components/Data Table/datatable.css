@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+.viewComp:hover {
+    background: var(--cl);
+}
+
+.viewComp {
+    min-width: 220px;
+}
+
+.viewComp p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.viewComp:hover p {
+    opacity: 0;
+    display: none;
+}
+
+.ViewPostSpan {
+    background: var(--cl);
+    display: none;
+    margin-top: 20;
+    transition: 10s;
+    transition-delay: 10s;
+    opacity: 0;
+}
+
+.ViewPostSpan button {
+    border: 1px solid black;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background: var(--theam);
+    color: rgb(1, 1, 12);
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.viewComp:hover .ViewPostSpan {
+    background: var(--cl);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    transition: 10s;
+    transition-delay: 10s;
+}
+
+th,
+td {
+    font-size: 0.9rem;
+}
+
+/*----------------* Media Max 760px *----------------*/
+@media (max-width:760) {
+
+    th,
+    td {
+        font-size: 10px;
+    }
+
+}

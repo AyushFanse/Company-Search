@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+#homeBack {
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px 20px 0px 17px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/*&______________ MOBILE ______________&*/
+
+
+@media (max-width: 1000px) {
+    #homeBack {
+        margin-top: 70px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 600px) {
+    #homeBack {
+        margin-top: 70px;
+    }
+}
+
+/*&______________ PAGINATION ______________&*/
+
+.paginating {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.paginating .page_cont {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.paginating .page_cont.active {
+    margin: 5px;
+}
+
+.paginating .page_cont.active p {
+    background: var(--theam);
+    color: rgb(1, 1, 12);
+    font-weight: 600;
+}
+
+.paginating .page_cont p {
+    background: var(--login);
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    margin: 0px;
+    border-radius: 50%;
+    border: 1px solid;
+}

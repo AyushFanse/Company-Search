@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+.FormOutlate {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.submitButton {
+    margin-top: 30px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 250px;
+}
+
+.Company_Form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userUpdateInputTextArea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.TextFieldfieldOutter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+/*&______________ MOBILE ______________&*/
+
+@media (max-width: 768px) {
+
+    .userUpdateInput,
+    .userUpdateOption {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .FormOutlate {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-title {
+        margin-left: 10%;
+    }
+
+    .fieldOutter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

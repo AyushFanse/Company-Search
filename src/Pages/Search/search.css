@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+.homeBack {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 80px 20px 0px 20px;
+}
+
+/*&______________ MOBILE ______________&*/
+
+@media (max-width: 768px) {
+    .homeBack {
+        margin-top: 116px;
+    }
+}
+
+@media (max-width: 600px) {
+    .homeBack {
+        margin-top: 108px;
+    }
+}

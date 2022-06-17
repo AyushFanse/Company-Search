@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+.AuthLayout {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.AuthCardLayout {
+    box-shadow: 3px 3px 10px 2px rgba(84, 145, 3, 0.442);
+    padding: 25px;
+    border-bottom: 5px solid var(--cl);
+    border-radius: 8% 2%;
+}
+
+.AuthHeading {
+    font-family: 'Montserrat';
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cl);
+    text-shadow: 0.7px 0.7px 3px var(--gr);
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.AuthTitle {
+    color: var(--cl);
+}
+
+.AuthIcon {
+    color: var(--cl);
+}
+
+.createAccount {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.AuthButton {
+    margin: 30px 0px;
+    padding: 5px 30px;
+    border: none;
+    box-shadow: 1px 1px 20px rgba(84, 145, 3, 0.442);
+    border-radius: 18px;
+    background: var(--cl);
+    color: var(--login);
+    text-align: center;
+    font-weight: 600;
+}

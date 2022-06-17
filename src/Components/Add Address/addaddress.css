@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+.newAddress {
+    margin-top: 90px;
+    flex: 4;
+}
+
+.Address {
+    flex: 4;
+    padding: 20px;
+}
+
+.AddressFormContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.AddressForm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.fieldOutter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fieldOutter>label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.userUpdateInput {
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.userUpdateOption {
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.ButtonOutter {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.AddressButton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 250px;
+}
+
+#CircularProgress {
+    color: var(--cl);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+
+/*&______________ MOBILE ______________&*/
+
+@media (max-width: 768px) {
+
+    .userUpdateInput,
+    .userUpdateOption {
+        width: 100%;
+    }
+}

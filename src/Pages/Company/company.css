@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Days+One&family=Inter:wght@700&family=Play:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --cl: rgb(125, 207, 19);
+    --login: #fff;
+    --theam: #ff6f00;
+    --clo: rgb(2, 9, 48);
+    --gr: rgb(83, 138, 16);
+}
+
+/*&________________ MAIN PAGE CSS ________________&*/
+
+#CompanyPagePart {
+    position: relative;
+    height: auto;
+    border-radius: 15px;
+    width: 95%;
+    margin: 80px auto 10px auto;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+#CompanyPageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    min-height: 150px;
+}
+
+.company_name {
+    background: var(--cl);
+    width: 100%;
+    height: 100%;
+    text-shadow: 0px 0px 6px rgb(3 3 3);
+    font-size: 19px;
+    opacity: 1;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.company_name .company_name_title {
+    width: 65%;
+}
+
+.company_name .company_name_title h2 {
+    position: absolute;
+    top: 45%;
+    color: var(--login);
+    text-transform: capitalize;
+    height: 100%;
+    padding: 19px 30px;
+}
+
+.company_name_location {
+    color: var(--login);
+    width: 35%;
+    padding: 30px 15px;
+}
+
+.company_name_location h6,
+.CompanyLocationText h6 {
+    text-transform: capitalize;
+}
+
+.CompanyLocationText {
+    display: none;
+}
+
+#CompanyPageTextContainer {
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#CompanyPageTextContainer #CompanyText {
+    width: 100%;
+    height: auto;
+    font-size: 21px;
+    font-family: 'Play', sans-serif;
+    text-align: justify;
+    padding: 30px 30px;
+    white-space: pre-line;
+}
+
+#CompanyPageTextContainer #CompanyText pre {
+    font-size: 19px;
+    font-family: 'Montserrat';
+    text-align: justify;
+    padding: 5px 20px;
+    white-space: pre-line;
+    margin-bottom: 0;
+}
+
+#CompanyPageContactContainer {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 0px 0px 15px 15px;
+    padding-bottom: 20px;
+}
+
+.CompanyPageContactsections {
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: inset 0px 10px 15px -12px rgba(17, 16, 16, 0.359);
+}
+
+.CompanyPageContactsections span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CompanyPageContactsections span button {
+    margin-right: 10px;
+    border: 1px solid black;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background: var(--theam);
+    color: rgb(1, 1, 12);
+    text-align: center;
+    font-weight: 700;
+}
+
+.CardFormat {
+    padding: 4% 4.5%;
+    margin: 20px 0px;
+}
+
+.CardFormat .CardFormatEdit {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contactName {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.contactEmail {
+    font-size: 1rem;
+}
+
+.contactNumber {
+    font-size: 0.8rem;
+}
+
+.EditButtonOut {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+}
+
+.EditButton {
+    opacity: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: -10px -7px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EditButton:hover {
+    background: rgba(0, 0, 0, 0.047);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.040);
+    cursor: pointer;
+}
+
+.CardFormat:hover .EditButton {
+    opacity: 1;
+}
+
+/*&______________ MOBILE ______________&*/
+
+@media (max-width: 768px) {
+    .company_name h1 {
+        padding-left: 20px;
+        font-size: 40px;
+    }
+
+    .CompanyLocationText {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        font-size: 21px;
+        font-family: 'Play', sans-serif;
+        text-align: justify;
+        padding: 0px 22px 18px 22px;
+        white-space: pre-line;
+    }
+
+    .company_name .company_name_title {
+        width: 100%;
+        height: auto;
+    }
+
+    .company_name_location {
+        display: none;
+    }
+
+    #CompanyPageTextContainer #CompanyText {
+        padding: 0px 20px;
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .company_name .company_name_title h2 {
+        position: unset;
+        margin-top: 20px;
+    }
+
+    .CompanyPageContactsections {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-shadow: inset 0px 10px 15px -12px rgba(17, 16, 16, 0.359);
+    }
+}
