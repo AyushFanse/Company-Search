@@ -13,6 +13,23 @@ const Signup = ({ URL }) => {
     const [showPassword, setShowPassword] = useState('');
     const authForm = useRef();
 
+    
+    //*-------------------------------* USE-EFFECT FUNCTION *-------------------------------*//
+
+    useEffect(() => {
+        if (!decodedToken) {
+            history.push('/');
+            return;
+        }
+
+        if (decodedToken.exp * 1000 <= Date.now()) {
+            alert("Session Timeout Please Login Again...");
+            history.push('/');
+            return;
+        }
+    }, [])
+
+
     //~-------------------------------* TITLE *-------------------------------~// 
     TabTitle(`Company Search | Signup`)
 
